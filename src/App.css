@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+.pink{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    scroll-snap-align: start;
+    background-color: pink;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.con{
+    width: 40%;
+    height: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.con1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.orange{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    scroll-snap-align: start;
+    background-color: orange;
 }
-
-.App-link {
-  color: #61dafb;
+.green{
+    height: 100vh;
+    width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.purple{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(3, 3, 56);
+    overflow: hidden;
+}
+.container{
+    scroll-snap-type: y mandatory;
+}
+.iphone{
+    position: absolute;
+    right: -110px;
+    top: 20px;
+}
+.iphoneback{
+    position: absolute;
+    left: -120px;
+    bottom: 20px;
+}
+.donut{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%) translateY(-100%);
+    left: 0;
+}
+.fries{
+    width: 330px;
+    height: 340px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50px) translateY(25px);
+}
+.pizza{
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(40px) rotate(-30deg) translateY(150px) ; 
+}
+.hungry-text{
+    font-size: 9vw;
+    position: absolute;
+    top: 30%;
+    color: white;
+    opacity:0;
+    font-weight: 1000;
+    
+}
+.justy{
+    justify-content: center;
+    align-items: center;
 }
