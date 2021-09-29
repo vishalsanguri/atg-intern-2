@@ -4,10 +4,14 @@
     display: flex;
     scroll-snap-align: start;
     background-color: pink;
+    background: url("./components/sky.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
 }
 .con{
     width: 40%;
     height: 100%;
+    position: relative;
 }
 .con1{
     width: 60%;
@@ -22,17 +26,22 @@
     width: 100%;
     display: flex;
     scroll-snap-align: start;
-    background-color: orange;
+    background-color: rgb(255, 182, 45);
 }
 .green{
     height: 100vh;
     width: 100%;
+    display: flex;
+    position: relative;
+    scroll-snap-align: start;
+    background-color: rgb(0, 177, 0);
 }
 .purple{
     height: 100vh;
     width: 100%;
     display: flex;
-    background-color: rgb(3, 3, 56);
+    scroll-snap-align: start;
+    background-color: rgb(241, 3, 241);
     overflow: hidden;
 }
 .container{
@@ -53,8 +62,8 @@
     height: 200px;
     position: absolute;
     top: 0;
-    transform: translateX(-100%) translateY(-100%);
-    left: 0;
+    transform: translateX(50%) translateY(-50%);
+    right: 0;
 }
 .fries{
     width: 330px;
@@ -84,4 +93,243 @@
 .justy{
     justify-content: center;
     align-items: center;
+}
+.netflix{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 230px;
+    height: 55%;
+    transform: translateY(-50%);
+}
+.amazon{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    left: 10px;
+    width: 200px;
+    height: 55%;
+}
+.white{
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    background: url("./components/home.PNG") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+.tablet{
+    width: 500px;
+    height: 450px;
+    transform: translateY(80%);
+}
+.botton{
+    align-items: center;
+    justify-content: flex-end;
+}
+.power-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+}
+.power-1{
+    opacity: 0;
+    transform: scale(0);
+    font-size: 80px;
+    z-index: 3;
+    color: white;
+    text-align: center;
+}
+.shadow-text{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.712);
+}
+.scroll-progress{
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    top: 50px;
+    left: 32vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    position: absolute;
+    width: 10px;
+    height: 90%;
+
+}
+.a1{
+    transform-origin: center;
+    transform: rotate(-60deg);
+}
+.a2{
+    transform-origin: center;
+    transform: rotate(0deg);
+}
+.a3{
+    transform-origin: center;
+    transform: rotate(60deg);
+}
+.a4{
+    transform-origin: center;
+    transform: rotate(120deg);
+}
+.a5{
+    transform-origin: center;
+    transform: rotate(180deg);
+}
+
+.cir1{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: white;
+}
+.cir2{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+
+}
+.cir3{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+}
+.cir4{
+    width: 10px;
+    border-radius: 5px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+}
+.cir5{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.black{
+    background-color: black;
+}
+.darkpink{
+    background-color: rgb(255, 85, 113);
+}
+.darkorange{
+    background-color: rgb(160, 104, 1);
+}
+.darkpurple{
+    background-color: rgb(114, 0, 114);
+}
+.darkgreen{
+    background-color: rgb(0, 92, 0);
+}
+.darkblue{
+    background-color: blue;
+}
+.handel{
+    position: absolute;
+    right: -350px;
+    bottom: 50px;
+    transform-origin: center;
+    animation: animation1 50s infinite linear;
+}
+.waves{
+    position: absolute;
+    bottom: -10px;
+    z-index: -2;
+    animation: animation2 10s infinite linear;
+    width: 100%;
+}
+.waves1{
+    position: absolute;
+    bottom: -30px;
+    animation: animation3 10s infinite linear;
+    left: -100px;
+    width: 100%;
+}
+.sail-text{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 100px;
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 80px;
+    text-align: center;
+}
+
+
+
+
+@keyframes animation1 {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animation2 {
+    0%{
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateX(100px);
+    }
+    100%{
+        transform:translateX(0px);
+    }
+}
+@keyframes animation3 {
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(50px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .scroll-progress{
+        left:28vw;
+    }
+}
+@media screen and (max-width:800px) {
+    .scroll-progress{
+        left:20vw;
+    }
+}
+@media screen and (max-width:600px) {
+    .scroll-progress{
+        width: 200px;
+    height: 200px;
+        left:20vw;
+    }
 }
